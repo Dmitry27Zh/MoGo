@@ -280,13 +280,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .statistics-inner {
     display: flex;
-    justify-content: space-between;
 }
 
 .statistics-item {
+    flex: 1 1 0;
     padding: 80px 0;
     font-size: 14px;
-    width: 20%;
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
 }
