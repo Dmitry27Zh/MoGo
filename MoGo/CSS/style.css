@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin: 35px auto 45px;
+    margin: 35px auto 0px;
 }
 
 .section-header-text {
@@ -222,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 24px;
     color: #999999;
     margin: 0;
+    margin-top: 45px;
 }
 
 .about {
@@ -298,4 +299,34 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     font-size: 72px;
     font-weight: 700;
+}
+
+.services {
+    margin-bottom: 70px;
+}
+
+.services-row {
+    padding: 50px 0;
+    display: flex;
+}
+
+.services-row:first-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.services-item {
+    padding-left: 90px;
+    flex: 1 1 0;
+}
+
+.service-item-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.services-item p {
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    margin: 0;
 }
