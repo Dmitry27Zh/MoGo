@@ -451,28 +451,25 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.review::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-left: 3px solid #cccccc;
-    border-top: 3px solid #cccccc;
-    position: absolute;
-    top: 50%;
-    left: 25px;
-    transform: translateY(-50%) rotate(-45deg);
-}
-
-.review::after {
-    content: "";
+.review-btn {
+    font-size: 0;
     width: 20px;
     height: 20px;
     border-right: 3px solid #cccccc;
     border-top: 3px solid #cccccc;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 25px;
+    transform: rotate(225deg);
+}
+
+.next {
     right: 25px;
-    transform: translateY(-50%) rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .review-text::before {
