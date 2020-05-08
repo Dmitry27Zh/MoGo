@@ -590,3 +590,58 @@ h1, h2, h3, h4, h5, h6 {
     color: #999999;
     text-align: center;
 }
+
+.badges {
+    background-color: #f8f8f8;
+    padding: 65px 0;
+}
+
+.badges-inner {
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 100px;
+    display: flex;
+}
+
+.gallery img {
+    display: block;
+    transition: opacity 0.2s;
+}
+
+.gallery-column-photo {
+    position: relative;
+    background: linear-gradient(#f38181, #fce38a);
+}
+
+.gallery-column-photo:hover img {
+    opacity: 0.1;
+}
+
+.gallery-column-text {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.gallery-column-photo:hover .gallery-column-text {
+    opacity: 1;
+}
+
+.gallery-column-title {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.gallery-column-subtitle {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: light;
+}
+
