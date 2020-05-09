@@ -815,6 +815,9 @@ li:last-child .social-item {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.followers-amount b {
+    font-size: 18px;
+}
 
 .social-links {
     margin-top: 10px;
@@ -834,6 +837,11 @@ input[type="email"] {
     height: 40px;
 }
 
+input[type="email"]:focus {
+    outline: none;
+    border-color: #95e1d3;
+}
+
 .footer-form button {
     font: inherit;
     text-transform: uppercase;
@@ -844,6 +852,14 @@ input[type="email"] {
     width: 150px;
     height: 40px;
     margin-left: -3px;
+}
+
+.footer-form button:hover {
+    background-color: #4fa595;
+}
+
+.footer-form button:focus {
+    outline: none;
 }
 
 .column-2 {
@@ -857,16 +873,13 @@ input[type="email"] {
 }
 
 .footer-blog {
-    padding-left: 140px;
-    padding-top: 20px;
-    position: relative;
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
 }
 
-.footer-blog-photo {
-    position: absolute;
-    top: 0;
-    left: 0;
+.footer-blog-text {
+    padding-left: 20px;
 }
 
 .footer-blog-title {
@@ -875,6 +888,11 @@ input[type="email"] {
     line-height: 18px;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+.footer-blog-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer-blog time {
@@ -889,7 +907,26 @@ input[type="email"] {
     width: 270px;
 }
 
+.instagram img {
+    display: block;
+}
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instagram-item {
+    padding-bottom: 3px;
+}
+
 .footer-copyright {
     padding: 20px 0;
     text-align: center;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: #f38181;
 }
