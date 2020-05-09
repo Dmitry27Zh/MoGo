@@ -627,3 +627,52 @@ li:last-child .social-item {
     left: 80px;
     top: -30px;
 }
+
+.clients {
+    background: url("../img/mountains-bg-2.png") no-repeat center;
+    background-size: cover;
+}
+
+.clients-list {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client {
+    width: 50%;
+    padding: 0 30px 65px 180px;
+    position: relative;
+}
+
+.client-name {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.client-profession {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.client-profession::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 20px 0;
+}
+
+.client-text {
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    color: #999999;
+}
+
+.client img {
+    position: absolute;
+    left: 40px;
+}
