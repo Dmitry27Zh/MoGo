@@ -121,8 +121,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 55px;
     transition: color 0.2s linear;
     position: relative;
-    top: 100%;
-    left: 0;
 }
 
 .nav-link::after {
@@ -267,11 +265,30 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 100;
     transform: translateY(-50%);
     opacity: 0;
+    z-index: 100;
+}
+
+.card-text.super-team {
+    padding-top: 35px;
+}
+
+.super-team-image {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1000;
 }
 
 .card-item:hover .card-text {
     opacity: 1;
     transition: opacity 0.2s;
+}
+
+.card-item:hover .super-team-image {
+    opacity: 1!important;
 }
 
 .statistics {
@@ -314,12 +331,47 @@ h1, h2, h3, h4, h5, h6 {
 .services-item {
     padding-left: 90px;
     flex: 1 1 0;
+    position: relative;
 }
 
 .service-item-title {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.service-item-title::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../img/sprite/sprite.png") no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 30px;
+}
+
+.service-1.service-item-title::before {
+    background-position: 0px 0px;
+}
+
+.service-2.service-item-title::before {
+    background-position: 0px -32px;
+}
+
+.service-3.service-item-title::before {
+    background-position: 0px -64px;
+}
+
+.service-4.service-item-title::before {
+    background-position: 0 -96px;
+}
+
+.service-5.service-item-title::before {
+    background-position: 0px -128px;
+}
+
+.service-6.service-item-title::before {
+    background-position: 0px -160px;
 }
 
 .services-item p {
@@ -379,6 +431,28 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     height: 60px;
     padding: 20px 0 0 60px;
+}
+
+.accordion-title::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background: url("../img/sprite/sprite.png") no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.accordion-title-1.accordion-title::before {
+    background-position: 0px -192px;
+}
+
+.accordion-title-2.accordion-title::before {
+    background-position: 0px -224px;
+}
+
+.accordion-title-3.accordion-title::before {
+    background-position: 0px -256px;
 }
 
 .accordion-title::after {
@@ -482,6 +556,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 150px;
     height: 150px;
     border: 3px solid #95e1d3;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .review-text {
@@ -601,6 +677,7 @@ li:last-child .social-item {
     transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.2s linear;
+    padding-top: 45px;
 }
 
 .gallery-column-photo:hover .gallery-column-text {
@@ -610,6 +687,17 @@ li:last-child .social-item {
 .gallery-column-title {
     font-size: 14px;
     text-transform: uppercase;
+}
+
+.gallery-column-title::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url("../img/sprite/sprite.png") no-repeat 0px -286px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .gallery-column-subtitle {
@@ -757,7 +845,6 @@ li:last-child .social-item {
 
 .map-inner {
     text-align: center;
-    padding-top: 40px;
 }
 
 .map-link {
@@ -765,6 +852,15 @@ li:last-child .social-item {
     text-transform: uppercase;
     font-size: 24px;
     color: #f38181;
+}
+
+.map-link::before {
+    content: "";
+    display: block;
+    margin: 0 auto 10px;
+    width: 20px;
+    height: 26px;
+    background: url("../img/sprite/sprite.png") no-repeat -6px -316px;
 }
 
 .map-link::after {
@@ -824,9 +920,7 @@ li:last-child .social-item {
 }
 
 .social-link {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+    margin-left: 15px;
 }
 
 input[type="email"] {
